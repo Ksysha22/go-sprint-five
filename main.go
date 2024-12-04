@@ -143,7 +143,7 @@ func (w Walking) Calories() float64 {
 	if heightMm == 0.0 {
 		return 0.0
 	}
-	calorWal := (CaloriesWeightMultiplier*w.Weight + (speed*speed/HeightMm)*CaloriesSpeedHeightMultiplier*w.Weight) * w.Duration.Hours() * MinInHours
+	calorWal := (CaloriesWeightMultiplier*w.Weight + (speed*speed/heightMm)*CaloriesSpeedHeightMultiplier*w.Weight) * w.Duration.Hours() * MinInHours
 	return calorWal
 }
 
